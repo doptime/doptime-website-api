@@ -13,7 +13,7 @@ RUN git clone -b master --single-branch https://github.com/yangkequn/goflow .
 RUN go mod download
 
 # 编译：把cmd/main.go编译成可执行的二进制文件，命名为app
-RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o /go/release/goflowapp ./main/main.go
+RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o /go/release/goflowapp ./main.go
 
 # 运行：使用scratch作为基础镜像
 FROM scratch as prod
