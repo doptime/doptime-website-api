@@ -5,6 +5,7 @@ import (
 
 	"github.com/yangkequn/goflow"
 	"github.com/yangkequn/goflow/api"
+	"github.com/yangkequn/goflow/config"
 )
 
 type ReqHello struct {
@@ -21,4 +22,5 @@ var ApiHello = api.New(func(req *ReqHello) (ret string, err error) {
 
 func main() {
 	goflow.Start()
+	config.LoadConfig_FromEnv()
 }

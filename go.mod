@@ -2,7 +2,7 @@ module goflow-services
 
 go 1.21.5
 
-require github.com/yangkequn/goflow v0.0.0-20240308065452-7a2cdeeb829c
+require github.com/yangkequn/goflow v0.0.0-20240308115900-c752b269aa5c
 
 require (
 	github.com/BurntSushi/toml v1.3.2 // indirect

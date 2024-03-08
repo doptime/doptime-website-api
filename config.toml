@@ -4,8 +4,8 @@ LogLevel = 1
 [[Redis]]
   Name = "dragonflydb"
   Username = ""
-  Password = "yourpasswordhere"
-  Host = "drangonflydb.local"
+  Password = "deaf@0829"
+  Host = "keydb.lan"
   Port = 6379
   DB = 0
 
