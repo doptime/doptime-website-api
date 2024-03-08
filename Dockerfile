@@ -17,6 +17,7 @@ COPY . .
 
 # compile binary file
 RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o /go/release/goflowapp ./main.go
+RUN chmod +x /go/release/goflowapp
 
 # create a new minimal image
 FROM scratch as prod
