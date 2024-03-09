@@ -61,6 +61,8 @@ github.com/yangkequn/goflow v0.0.0-20240308080503-7fc1819c8940 h1:9j+ghoo1Q2NC50
 github.com/yangkequn/goflow v0.0.0-20240308080503-7fc1819c8940/go.mod h1:sv4EJZ32oBXPJk4N5VDgqbjocg6FUcf/ExAg08UDKPs=
 github.com/yangkequn/goflow v0.0.0-20240308115900-c752b269aa5c h1:oLooeNTDLkGY2zbyBYOKBKcaBIxJEeQm+aA7tVfsqMo=
 github.com/yangkequn/goflow v0.0.0-20240308115900-c752b269aa5c/go.mod h1:sv4EJZ32oBXPJk4N5VDgqbjocg6FUcf/ExAg08UDKPs=
+github.com/yangkequn/goflow v0.0.0-20240309021707-6daa5f1c5291 h1:LnLRmwe8YFyn8g8X5ww/ufg+EbSV0ZAB4AejWuyo/FI=
+github.com/yangkequn/goflow v0.0.0-20240309021707-6daa5f1c5291/go.mod h1:sv4EJZ32oBXPJk4N5VDgqbjocg6FUcf/ExAg08UDKPs=
 golang.org/x/net v0.0.0-20210316092652-d523dce5a7f4/go.mod h1:RBQZq4jEuRlivfhVLdyRGr576XBO4/greRjx4P4O3yc=
 golang.org/x/net v0.15.0 h1:ugBLEUaxABaB5AJqW9enI0ACdci2RUd4eP51NTBvuJ8=
 golang.org/x/net v0.15.0/go.mod h1:idbUs1IY1+zTqbi8yxTbhexhEEk5ur9LInksu6HrEpk=
