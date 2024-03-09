@@ -2,7 +2,7 @@ module goflow-services
 
 go 1.21.5
 
-require github.com/yangkequn/goflow v0.0.0-20240309041951-93c8a92ff331
+require github.com/yangkequn/goflow v0.0.0-20240309095617-964767b4b9f6
 
 require (
 	github.com/BurntSushi/toml v1.3.2 // indirect
@@ -11,6 +11,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/go-ping/ping v1.1.0 // indirect
+	github.com/golang-jwt/jwt/v5 v5.0.0-rc.1 // indirect
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/jinzhu/copier v0.3.5 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
