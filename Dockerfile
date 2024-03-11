@@ -19,6 +19,10 @@ COPY . .
 RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o /go/release/goflowapp ./main.go
 RUN chmod +x /go/release/goflowapp
 
+# 准备包含 ca-certificates 的中间镜像
+FROM alpine:latest as certs
+RUN apk --update add ca-certificates
+
 # create a new minimal image
 FROM scratch as prod
 
@@ -26,5 +30,6 @@ FROM scratch as prod
 #COPY --from=build /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 # copy binary file from build image
+COPY --from=certs /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=build /go/release/goflowapp /
 CMD ["./goflowapp"]
