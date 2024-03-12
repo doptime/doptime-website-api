@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/yangkequn/goflow/api"
-	"github.com/yangkequn/goflow/httpservice"
+	_ "github.com/yangkequn/goflow/httpserve"
 )
 
 type ReqHello struct {
@@ -20,5 +21,6 @@ var ApiHello = api.New(func(req *ReqHello) (ret string, err error) {
 }, *api.Option.WithDataSource(""))
 
 func main() {
-	httpservice.Start()
+	//forever sleep
+	time.Sleep(time.Duration(1<<63 - 1))
 }
