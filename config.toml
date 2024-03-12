@@ -17,6 +17,5 @@ Fields = "*"
 CORES = "*"
 Port = 80
 Path = "/"
-Enable = false
 MaxBufferSize = 10485760
 AutoAuth = false
