@@ -45,7 +45,7 @@ jobs:
           context: .
           platforms: ${{ vars.PLATFORMS }}
           push: true
-          tags: ${{ secrets.DOCKERHUBNAMESPACE }}/doptime-services:latest
+          tags: ${{ secrets.DOCKERHUBNAMESPACE }}/doptime-website-api:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
