@@ -1,8 +1,8 @@
-module goflow-services
+module doptime-website-api
 
 go 1.21.5
 
-require github.com/yangkequn/goflow v0.0.0-20240312081237-766ca7a3c7d6
+require github.com/doptime/doptime v0.0.0-20240315041306-2f4262e8bb5d
 
 require (
 	github.com/BurntSushi/toml v1.3.2 // indirect

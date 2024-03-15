@@ -45,7 +45,7 @@ jobs:
           context: .
           platforms: ${{ vars.PLATFORMS }}
           push: true
-          tags: ${{ github.actor }}/goflow-services:latest
+          tags: ${{ github.actor }}/doptime-services:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache,mode=max
 
