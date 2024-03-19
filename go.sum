@@ -18,6 +18,8 @@ github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f h1:lO4WD4F/r
 github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f/go.mod h1:cuUVRXasLTGF7a8hSLbxyZXjz+1KgoB3wDUb6vlszIc=
 github.com/doptime/doptime v0.0.0-20240315041306-2f4262e8bb5d h1:Wr9Z6ANzAJRxfFmgKaSpPQ1KIQAUZcH//fe+dczg+XE=
 github.com/doptime/doptime v0.0.0-20240315041306-2f4262e8bb5d/go.mod h1:0MV0qZtERgfz/ljG/NM5Qfrh+M+raThd0sb/G5zJtS4=
+github.com/doptime/doptime v0.0.0-20240319021121-d8f5385596ff h1:yzGN2AVflrYJe2C1/BBTnoW7/qPe5IVWc+N0E0eIL2o=
+github.com/doptime/doptime v0.0.0-20240319021121-d8f5385596ff/go.mod h1:0MV0qZtERgfz/ljG/NM5Qfrh+M+raThd0sb/G5zJtS4=
 github.com/go-ping/ping v1.1.0 h1:3MCGhVX4fyEUuhsfwPrsEdQw6xspHkv5zHsiSoDFZYw=
 github.com/go-ping/ping v1.1.0/go.mod h1:xIFjORFzTxqIV/tDVGO4eDy/bLuSyawEeojSm3GfRGk=
 github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=

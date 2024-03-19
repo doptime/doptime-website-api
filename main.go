@@ -9,13 +9,13 @@ import (
 )
 
 type ReqHello struct {
-	HeaderIP        string
-	HeaderUserAgent string
-	Text            string
+	HeaderRemoteAddr string
+	HeaderUserAgent  string
+	Text             string
 }
 
 var ApiHello = api.New(func(req *ReqHello) (ret string, err error) {
-	var response = fmt.Sprintf("Hello, IP:%s, UserAgent:%s, Text:%s", req.HeaderIP, req.HeaderUserAgent, req.Text)
+	var response = fmt.Sprintf("Hello, IP:%s, UserAgent:%s, Text:%s", req.HeaderRemoteAddr, req.HeaderUserAgent, req.Text)
 	return response, nil
 
 }, *api.Option.WithDataSource(""))
