@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "doptime-client": "^0.3.5"
+  }
+}
