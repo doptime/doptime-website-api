@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "doptime-client": "^0.3.5"
   }
 }
