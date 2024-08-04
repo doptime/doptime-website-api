@@ -15,7 +15,7 @@ type ReqGetProjectToml struct {
 	JwtID     string `validate:"required"`
 }
 
-var keyProjectToml = rdsdb.HashKey[string, string](rdsdb.Option.WithKey("ProjectToml"))
+var keyProjectToml = rdsdb.HashKey[string, string](rdsdb.WithKey("ProjectToml"))
 
 var APIGetProjectToml = api.Api(func(req *ReqGetProjectToml) (projectToml string, err error) {
 	if projectToml, err = keyProjectToml.ConcatKey(req.JwtID).HGet(req.ProjectID); err != nil && err != redis.Nil {

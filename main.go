@@ -26,6 +26,12 @@ var ApiHello = api.Api(func(req *ReqHello) (ret string, err error) {
 }).Func
 
 func main() {
+	httpserve.Debug()
+	v, err := KeySubProjectIterator.ConcatKey("github_73812416").HGet("ZleqiGFBDH_Vh5D3nv")
+	if err != nil {
+		fmt.Println(err)
+	}
+	KeySubProjectIterator.ConcatKey("github_73812416").HSet("ZleqiGFBDH_5DVhn3v", v)
 	fmt.Println(rdsdb.ConcatedKeys("ConcatedKeys", "fields"))
 	httpserve.Debug()
 	OT := dynamicdev.GetProjectArchitectureInfoIn{ProjectDir: "/Users/chenyong/Projects/doptime/doptime"}
@@ -39,12 +45,12 @@ func main() {
 	time.Sleep(time.Duration(1<<63 - 1))
 }
 
-var ApiRpcOverHttp = api.RpcOverHttp[*ReqHello, string]().HookParamEnhancer(func(req *ReqHello) (r *ReqHello, e error) {
-	return req, nil
-}).HookResultSaver(func(req *ReqHello, ret string) (e error) {
-	//save result here if you need
-	return nil
-}).HookResponseModifier(func(req *ReqHello, ret string) (retvalue interface{}, e error) {
-	//furthur modify the response value to the client here
-	return ret, nil
-}).Func
+// var ApiRpcOverHttp = api.RpcOverHttp[*ReqHello, string]().HookParamEnhancer(func(req *ReqHello) (r *ReqHello, e error) {
+// 	return req, nil
+// }).HookResultSaver(func(req *ReqHello, ret string) (e error) {
+// 	//save result here if you need
+// 	return nil
+// }).HookResponseModifier(func(req *ReqHello, ret string) (retvalue interface{}, e error) {
+// 	//furthur modify the response value to the client here
+// 	return ret, nil
+// }).Func

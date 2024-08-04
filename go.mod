@@ -4,9 +4,9 @@ go 1.22.3
 
 require (
 	github.com/BurntSushi/toml v1.3.2
-	github.com/doptime/doptime v0.0.0-20240629062635-bea22b27f9a1
+	github.com/doptime/doptime v0.0.0-20240804123505-9872a5315ade
 	github.com/go-resty/resty/v2 v2.13.1
-	github.com/redis/go-redis/v9 v9.5.1
+	github.com/redis/go-redis/v9 v9.0.0-20240620083026-da8623ecea1f
 )
 
 require (
@@ -21,6 +21,7 @@ require (
 	github.com/go-playground/validator/v10 v10.20.0 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
 	github.com/google/uuid v1.2.0 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
@@ -29,9 +30,9 @@ require (
 	github.com/rs/zerolog v1.33.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	golang.org/x/crypto v0.23.0 // indirect
+	golang.org/x/crypto v0.25.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
-	golang.org/x/sync v0.3.0 // indirect
-	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.15.0 // indirect
+	golang.org/x/sync v0.7.0 // indirect
+	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
 )
